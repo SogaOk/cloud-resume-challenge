@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.4;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            color: #2c3e50;
+            text-decoration: none;
+            border-bottom: 1px dotted #2c3e50;
+        }
+
+        .contact-info a:hover {
+            color: #3498db;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* Entry Styling */
+        .entry {
+            margin-bottom: 12px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .position-title {
+            font-weight: 700;
+            font-size: 12px;
+            color: #2c3e50;
+        }
+
+        .company-name {
+            font-weight: 600;
+            font-size: 12px;
+            color: #34495e;
+        }
+
+        .date {
+            font-size: 11px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .location {
+            font-size: 11px;
+            color: #7f8c8d;
+            margin-bottom: 3px;
+        }
+
+        .description {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.5;
+            margin-top: 4px;
+        }
+
+        .description li {
+            margin-left: 15px;
+            margin-bottom: 2px;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 11px;
+        }
+
+        .skill-category {
+            margin-bottom: 8px;
+        }
+
+        .skill-category-title {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 11px;
+            margin-bottom: 3px;
+        }
+
+        .skill-list {
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Education Section */
+        .degree {
+            font-weight: 700;
+            font-size: 12px;
+            color: #2c3e50;
+        }
+
+        .institution {
+            font-weight: 600;
+            font-size: 12px;
+            color: #34495e;
+        }
+
+        .graduation {
+            font-size: 11px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .gpa {
+            font-size: 11px;
+            color: #555;
+            margin-top: 2px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0.5in;
+                box-shadow: none;
+            }
+
+            .contact-info {
+                font-size: 11px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .name {
+                font-size: 22px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .entry-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .date {
+                margin-top: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">YOUR NAME</div>
+            <div class="contact-info">
+                <span>(XXX) XXX-XXXX</span>
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+                <a href="https://github.com/yourprofile">GitHub</a>
+                <span>Toronto, ON</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary (Optional) -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="description">
+                Results-driven professional with X years of experience in [your field]. Proven track record of delivering [key achievements]. 
+                Seeking to leverage expertise in [specific skills] to drive business impact in a [target role] position.
+            </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section">
+            <div class="section-title">Work Experience</div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="position-title">Senior Software Developer</div>
+                        <div class="company-name">Tech Company Inc.</div>
+                    </div>
+                    <div class="date">January 2021 – Present</div>
+                </div>
+                <div class="location">Toronto, ON</div>
+                <div class="description">
+                    <ul>
+                        <li>Led development of microservices architecture serving 10,000+ daily users, resulting in 40% performance improvement</li>
+                        <li>Managed team of 4 junior developers, conducting code reviews and providing technical mentorship</li>
+                        <li>Architected CI/CD pipeline using GitHub Actions, reducing deployment time from 2 hours to 15 minutes</li>
+                        <li>Implemented automated testing suite achieving 85% code coverage, reducing production bugs by 35%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="position-title">Software Developer</div>
+                        <div class="company-name">Digital Solutions Ltd.</div>
+                    </div>
+                    <div class="date">June 2019 – December 2020</div>
+                </div>
+                <div class="location">Vancouver, BC</div>
+                <div class="description">
+                    <ul>
+                        <li>Developed full-stack web applications using React, Node.js, and PostgreSQL for 15+ enterprise clients</li>
+                        <li>Improved database query performance by 60% through query optimization and indexing strategies</li>
+                        <li>Collaborated with UX/UI team to implement responsive designs improving mobile user engagement by 25%</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">Languages</div>
+                    <div class="skill-list">Python, JavaScript, TypeScript, SQL, Java</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Frontend</div>
+                    <div class="skill-list">React, Vue.js, HTML5, CSS3, Tailwind</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Backend</div>
+                    <div class="skill-list">Node.js, Express, Django, REST APIs</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Cloud & DevOps</div>
+                    <div class="skill-list">AWS, Docker, Kubernetes, CI/CD</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Tools & Platforms</div>
+                    <div class="skill-list">Git, GitHub, Linux, PostgreSQL, MongoDB</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Certifications</div>
+                    <div class="skill-list">AWS Solutions Architect, Scrum Master</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="degree">Bachelor of Science in Computer Science</div>
+                        <div class="institution">University of Toronto</div>
+                    </div>
+                    <div class="graduation">Graduated: June 2019</div>
+                </div>
+                <div class="gpa">GPA: 3.8/4.0 | Dean's List (All Semesters)</div>
+            </div>
+
+        </div>
+
+        <!-- Projects (Optional) -->
+        <div class="section">
+            <div class="section-title">Projects</div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="position-title">Cloud Resume Challenge</div>
+                    </div>
+                    <div class="date">2024</div>
+                </div>
+                <div class="description">
+                    Deployed a full-stack serverless resume application on AWS with S3, CloudFront, Lambda, and DynamoDB. 
+                    Integrated GitHub Actions for automated CI/CD pipeline.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Languages (Optional - Bilingual advantage in Canada) -->
+        <div class="section">
+            <div class="section-title">Languages</div>
+            <div class="description">
+                English (Native) • French (Professional Working Proficiency)
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
