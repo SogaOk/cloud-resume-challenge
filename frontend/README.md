@@ -66,3 +66,26 @@ Github Copilot has successfully extracted the inline CSS into a style.css file a
 This is the new [HTML file](index.html) and this is the [css file generated](style.css)
 
 I am happy with the HTML resume page as is, I will start to customize it with my information
+
+I will modify my resume site to have a home page and a projects page. I think this will be a more optimal structure and will allow me to show case additional projects that I work on. I will use Copilot AI to generate this modified structure.
+
+Prompt to Github Copilot:
+
+```text
+I want to add a home page and a projects page to my site. I would like to have a navigation bar at the top of the page with a clean, professional design that complements what we have so far. I would also like to have a nice background different from the plain white background that the site currently has, again something clean and professional.
+```
+
+My website includes a navigation bar and a home page and projects page now. My name has been included in the nav bar and clicking on it navigates to back to the home page from other pages. The Home tab also navigates to the home page as expected. This is redundant so I will remove my name from the nav bar and reposition the page tabs to the left side of the nav bar as they are currently on the right side.
+
+Prompt to Github Copilot:
+
+```text
+I would like to move the items in the navigation bar to the left and I would also like to remove my name from the nav bar as it is serving the same function as the home tab.
+```
+
+The is the current home page. I would like to have some spacing between the View Resume and See Projects buttons and the About Me section.
+
+![](./assets/updated_site_home_html_sample_2.jpg)
+
+
+
