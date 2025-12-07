@@ -74,6 +74,9 @@ Prompt to Github Copilot:
 ```text
 I want to add a home page and a projects page to my site. I would like to have a navigation bar at the top of the page with a clean, professional design that complements what we have so far. I would also like to have a nice background different from the plain white background that the site currently has, again something clean and professional.
 ```
+This is the result of the latest modifications;
+
+![](./assets/updated_site_home_html_sample.jpg)
 
 My website includes a navigation bar and a home page and projects page now. My name has been included in the nav bar and clicking on it navigates to back to the home page from other pages. The Home tab also navigates to the home page as expected. This is redundant so I will remove my name from the nav bar and reposition the page tabs to the left side of the nav bar as they are currently on the right side.
 
@@ -87,5 +90,17 @@ The is the current home page. I would like to have some spacing between the View
 
 ![](./assets/updated_site_home_html_sample_2.jpg)
 
+Prompt to Github Copilot:
 
+```text
+I would like to have some spacing between the View Resume and See Projects buttons and the About Me section on this page.
+```
+
+```text
+Apply similar spacing between the About Me and Highlights sections.
+```
+
+The changes have been applied to the code and this is the current output;
+
+![](./assets/updated_site_home_html_sample_3.jpg)
 
